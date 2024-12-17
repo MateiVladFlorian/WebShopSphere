@@ -8,14 +8,32 @@
     <body>
       <div class="form-container">
           <h1>Login</h1>
-          <form id="signin-form" autocomplete="off">
-              <input type="text" name="name" placeholder="Username" minlegth="1" maxlength="255" required>
-              <input type="password" name="password" placeholder="Password" minlegth="8" maxlength="32" required>
-              <button type="submit">Sign in</button>
+          <form id="signin-form" autocomplete="off" method="POST">
+              <input id="email" type="email" name="email" placeholder="Email Address" minlength="8" maxlength="255" required>
+              <input type="text" name="name" id="Username" placeholder="Username" minlength="1" maxlength="255" required>
+              <input type="password" name="password" placeholder="Password" minlength="8" maxlength="32" required>
+              <br><br>
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="submit" name="action" value="signin" id="signin">Sign in</button>
+              <br>
           </form>
           <div id="response-message" style="margin-top: 20px; color: green;"></div>
+
+          <form id="Reset" autocomplete="off" method="POST">
+               <label id="Email" name="Email"></label>
+               <label id="username" name="Username"></label>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               <button type="submit" name="action" id="OptionReset" value="reset">Forgot your password? Reset it here.</button>
+          </form>
       </div>
 
       <script src="https://mateivladflorian.github.io/WebShopSphere/Validations/LoginValidation.js"></script>
+      <script src="Validations/ResetValidation.js"></script>
+
   </body>
 </html>
