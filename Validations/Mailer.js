@@ -7,7 +7,7 @@ document.getElementById("send-mail").addEventListener("submit", function (event)
     const formData = new FormData(form);
 
     // Trimiterea datelor prin AJAX folosind fetch
-    fetch("http://localhost/ManagerAccess/SendMail.php", {
+    fetch("http://localhost/ManagerAccess/SendMailer.php", {
         method: "POST",
         body: formData,
     })
